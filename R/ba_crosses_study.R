@@ -19,10 +19,8 @@
 #' @note BrAPI Status: deprecated
 #'
 #' @author Reinhard Simon
-#' @references
 #' @family germplasm
 #' @family brapicore
-#' @example
 #' @import tibble
 #' @export
 
