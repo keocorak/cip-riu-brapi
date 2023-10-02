@@ -4,11 +4,20 @@
 \alias{ba_markerprofiles_allelematrices_search}
 \title{ba_markerprofiles_allelematrices_search}
 \usage{
-ba_markerprofiles_allelematrices_search(con = NULL,
-  markerProfileDbId = "", markerDbId = "", matrixDbId = "",
-  format = "json", expandHomozygotes = FALSE, unknownString = "-",
-  sepPhased = "", sepUnphased = "", pageSize = 1000, page = 0,
-  rclass = c("tibble", "data.frame", "list", "json"))
+ba_markerprofiles_allelematrices_search(
+  con = NULL,
+  markerProfileDbId = "",
+  markerDbId = "",
+  matrixDbId = "",
+  format = "json",
+  expandHomozygotes = FALSE,
+  unknownString = "-",
+  sepPhased = "",
+  sepUnphased = "",
+  pageSize = 1000,
+  page = 0,
+  rclass = c("tibble", "data.frame", "list", "json")
+)
 }
 \arguments{
 \item{con}{brapi connection object}
@@ -60,31 +69,33 @@ if (interactive()) {
 \href{https://github.com/plantbreeding/API/blob/V1.2/Specification/MarkerProfiles/AlleleMatricesSearch_GET.md}{github}
 }
 \seealso{
-Other markerprofiles: \code{\link{ba_markerprofiles_allelematrices_details}},
-  \code{\link{ba_markerprofiles_allelematrices_search_post}},
-  \code{\link{ba_markerprofiles_allelematrix_search}},
-  \code{\link{ba_markerprofiles_details}},
-  \code{\link{ba_markerprofiles_search}}
+Other markerprofiles: 
+\code{\link{ba_markerprofiles_allelematrices_details}()},
+\code{\link{ba_markerprofiles_allelematrices_search_post}()},
+\code{\link{ba_markerprofiles_allelematrix_search}()},
+\code{\link{ba_markerprofiles_details}()},
+\code{\link{ba_markerprofiles_search}()}
 
-Other genotyping: \code{\link{ba_genomemaps_data_range}},
-  \code{\link{ba_genomemaps_data}},
-  \code{\link{ba_genomemaps_details}},
-  \code{\link{ba_genomemaps}},
-  \code{\link{ba_germplasm_attributes}},
-  \code{\link{ba_germplasm_markerprofiles}},
-  \code{\link{ba_germplasm_search_post}},
-  \code{\link{ba_germplasm_search}},
-  \code{\link{ba_germplasmattributes_attributes}},
-  \code{\link{ba_germplasmattributes_categories}},
-  \code{\link{ba_germplasmattributes_details}},
-  \code{\link{ba_markerprofiles_allelematrices_details}},
-  \code{\link{ba_markerprofiles_allelematrices_search_post}},
-  \code{\link{ba_markerprofiles_allelematrix_search}},
-  \code{\link{ba_markerprofiles_details}},
-  \code{\link{ba_markerprofiles_search}},
-  \code{\link{ba_markers_details}},
-  \code{\link{ba_markers_search_post}},
-  \code{\link{ba_markers_search}}
+Other genotyping: 
+\code{\link{ba_genomemaps_data_range}()},
+\code{\link{ba_genomemaps_data}()},
+\code{\link{ba_genomemaps_details}()},
+\code{\link{ba_genomemaps}()},
+\code{\link{ba_germplasm_attributes}()},
+\code{\link{ba_germplasm_markerprofiles}()},
+\code{\link{ba_germplasm_search_post}()},
+\code{\link{ba_germplasm_search}()},
+\code{\link{ba_germplasmattributes_attributes}()},
+\code{\link{ba_germplasmattributes_categories}()},
+\code{\link{ba_germplasmattributes_details}()},
+\code{\link{ba_markerprofiles_allelematrices_details}()},
+\code{\link{ba_markerprofiles_allelematrices_search_post}()},
+\code{\link{ba_markerprofiles_allelematrix_search}()},
+\code{\link{ba_markerprofiles_details}()},
+\code{\link{ba_markerprofiles_search}()},
+\code{\link{ba_markers_details}()},
+\code{\link{ba_markers_search_post}()},
+\code{\link{ba_markers_search}()}
 }
 \author{
 Reinhard Simon

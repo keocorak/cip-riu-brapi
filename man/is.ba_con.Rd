@@ -16,12 +16,16 @@ boolean (TRUE of FALSE)
 check whether an object is of class brapi_con
 }
 \seealso{
-Other brapiutils: \code{\link{as.ba_db}},
-  \code{\link{ba_can_internet}}, \code{\link{ba_check}},
-  \code{\link{ba_connect}}, \code{\link{ba_db}},
-  \code{\link{ba_login}}, \code{\link{ba_logout}},
-  \code{\link{print.ba_con}},
-  \code{\link{print.ba_db_list}}
+Other brapiutils: 
+\code{\link{as.ba_db}()},
+\code{\link{ba_can_internet}()},
+\code{\link{ba_check}()},
+\code{\link{ba_connect}()},
+\code{\link{ba_db}()},
+\code{\link{ba_login}()},
+\code{\link{ba_logout}()},
+\code{\link{print.ba_con}()},
+\code{\link{print.ba_db_list}()}
 }
 \author{
 Reinahard Simon, Maikel Verouden

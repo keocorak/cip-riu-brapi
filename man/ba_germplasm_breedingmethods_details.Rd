@@ -4,9 +4,11 @@
 \alias{ba_germplasm_breedingmethods_details}
 \title{ba_germplasm_breedingmethods_details}
 \usage{
-ba_germplasm_breedingmethods_details(con = NULL,
-  breedingMethodDbId = "", rclass = c("tibble", "data.frame", "list",
-  "json"))
+ba_germplasm_breedingmethods_details(
+  con = NULL,
+  breedingMethodDbId = "",
+  rclass = c("tibble", "data.frame", "list", "json")
+)
 }
 \arguments{
 \item{con}{list, brapi connection object}

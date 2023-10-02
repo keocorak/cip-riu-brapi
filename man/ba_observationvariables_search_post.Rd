@@ -4,11 +4,20 @@
 \alias{ba_observationvariables_search_post}
 \title{ba_observationvariables_search_post}
 \usage{
-ba_observationvariables_search_post(con = NULL, datatypes = "",
-  methodDbIds = "", names = "", observationVariableDbIds = "",
-  ontologyXrefs = "", ontologyDbIds = "", scaleDbIds = "",
-  traitClasses = "", pageSize = 1000, page = 0,
-  rclass = c("tibble", "data.frame", "list", "json"))
+ba_observationvariables_search_post(
+  con = NULL,
+  datatypes = "",
+  methodDbIds = "",
+  names = "",
+  observationVariableDbIds = "",
+  ontologyXrefs = "",
+  ontologyDbIds = "",
+  scaleDbIds = "",
+  traitClasses = "",
+  pageSize = 1000,
+  page = 0,
+  rclass = c("tibble", "data.frame", "list", "json")
+)
 }
 \arguments{
 \item{con}{list, brapi connection object}

@@ -4,10 +4,22 @@
 \alias{ba_connect}
 \title{ba_connect}
 \usage{
-ba_connect(brapiDb = NULL, secure = FALSE, protocol = "http://",
-  db = "127.0.0.1", port = 2021, apipath = NULL, multicrop = FALSE,
-  crop = "sweetpotato", user = "", password = "", token = "",
-  granttype = "password", clientid = "rbrapi", bms = FALSE)
+ba_connect(
+  brapiDb = NULL,
+  secure = FALSE,
+  protocol = "http://",
+  db = "127.0.0.1",
+  port = 2021,
+  apipath = NULL,
+  multicrop = FALSE,
+  crop = "sweetpotato",
+  user = "",
+  password = "",
+  token = "",
+  granttype = "password",
+  clientid = "rbrapi",
+  bms = FALSE
+)
 }
 \arguments{
 \item{brapiDb}{brapiDb R object for brapi databases created by as.ba_db [default: NULL]}
@@ -58,12 +70,16 @@ if (interactive()) {
 }
 }
 \seealso{
-Other brapiutils: \code{\link{as.ba_db}},
-  \code{\link{ba_can_internet}}, \code{\link{ba_check}},
-  \code{\link{ba_db}}, \code{\link{ba_login}},
-  \code{\link{ba_logout}}, \code{\link{is.ba_con}},
-  \code{\link{print.ba_con}},
-  \code{\link{print.ba_db_list}}
+Other brapiutils: 
+\code{\link{as.ba_db}()},
+\code{\link{ba_can_internet}()},
+\code{\link{ba_check}()},
+\code{\link{ba_db}()},
+\code{\link{ba_login}()},
+\code{\link{ba_logout}()},
+\code{\link{is.ba_con}()},
+\code{\link{print.ba_con}()},
+\code{\link{print.ba_db_list}()}
 }
 \author{
 Reinhard Simon, Maikel Verouden

@@ -4,8 +4,12 @@
 \alias{ba_germplasm_breedingmethods}
 \title{ba_germplasm_breedingmethods}
 \usage{
-ba_germplasm_breedingmethods(con = NULL, pageSize = 1000, page = 0,
-  rclass = c("tibble", "data.frame", "list", "json"))
+ba_germplasm_breedingmethods(
+  con = NULL,
+  pageSize = 1000,
+  page = 0,
+  rclass = c("tibble", "data.frame", "list", "json")
+)
 }
 \arguments{
 \item{con}{list, brapi connection object}
@@ -47,14 +51,16 @@ if (interactive()) {
 \href{https://github.com/plantbreeding/API/blob/V1.2/Specification/Germplasm/BreedingMethods_GET.md}{github}
 }
 \seealso{
-Other germplasm: \code{\link{ba_germplasm_details_study}},
-  \code{\link{ba_germplasm_details}},
-  \code{\link{ba_germplasm_markerprofiles}},
-  \code{\link{ba_germplasm_pedigree}},
-  \code{\link{ba_germplasm_progeny}},
-  \code{\link{ba_germplasm_search_post}},
-  \code{\link{ba_germplasm_search}},
-  \code{\link{ba_studies_germplasm_details}}
+Other germplasm: 
+\code{\link{ba_crosses_study}()},
+\code{\link{ba_germplasm_details_study}()},
+\code{\link{ba_germplasm_details}()},
+\code{\link{ba_germplasm_markerprofiles}()},
+\code{\link{ba_germplasm_pedigree}()},
+\code{\link{ba_germplasm_progeny}()},
+\code{\link{ba_germplasm_search_post}()},
+\code{\link{ba_germplasm_search}()},
+\code{\link{ba_studies_germplasm_details}()}
 }
 \author{
 Reinhard Simon, Maikel Verouden

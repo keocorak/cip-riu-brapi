@@ -37,12 +37,16 @@ if (interactive()) {
 \href{https://github.com/plantbreeding/API/blob/V1.2/Specification/Authentication/Authentication.md}{github}
 }
 \seealso{
-Other brapiutils: \code{\link{as.ba_db}},
-  \code{\link{ba_can_internet}}, \code{\link{ba_check}},
-  \code{\link{ba_connect}}, \code{\link{ba_db}},
-  \code{\link{ba_login}}, \code{\link{is.ba_con}},
-  \code{\link{print.ba_con}},
-  \code{\link{print.ba_db_list}}
+Other brapiutils: 
+\code{\link{as.ba_db}()},
+\code{\link{ba_can_internet}()},
+\code{\link{ba_check}()},
+\code{\link{ba_connect}()},
+\code{\link{ba_db}()},
+\code{\link{ba_login}()},
+\code{\link{is.ba_con}()},
+\code{\link{print.ba_con}()},
+\code{\link{print.ba_db_list}()}
 }
 \author{
 Reinhard Simon, Maikel Verouden

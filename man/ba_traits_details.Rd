@@ -4,8 +4,11 @@
 \alias{ba_traits_details}
 \title{ba_traits_details}
 \usage{
-ba_traits_details(con = NULL, traitDbId = "", rclass = c("tibble",
-  "data.frame", "list", "json"))
+ba_traits_details(
+  con = NULL,
+  traitDbId = "",
+  rclass = c("tibble", "data.frame", "list", "json")
+)
 }
 \arguments{
 \item{con}{list, brapi connection object}
@@ -44,25 +47,29 @@ if (interactive()) {
 \href{https://github.com/plantbreeding/API/blob/V1.2/Specification/Traits/TraitDetails.md}{github}
 }
 \seealso{
-Other traits: \code{\link{ba_traits}}
+Other traits: 
+\code{\link{ba_traits}()}
 
-Other brapicore: \code{\link{ba_calls}},
-  \code{\link{ba_commoncropnames}}, \code{\link{ba_crops}},
-  \code{\link{ba_germplasm_details_study}},
-  \code{\link{ba_germplasm_details}},
-  \code{\link{ba_germplasm_pedigree}},
-  \code{\link{ba_germplasm_progeny}},
-  \code{\link{ba_germplasm_search_post}},
-  \code{\link{ba_germplasm_search}},
-  \code{\link{ba_observationvariables_datatypes}},
-  \code{\link{ba_observationvariables_details}},
-  \code{\link{ba_observationvariables_ontologies}},
-  \code{\link{ba_observationvariables}},
-  \code{\link{ba_phenotypes_search_post}},
-  \code{\link{ba_programs_search_post}},
-  \code{\link{ba_programs}},
-  \code{\link{ba_studies_germplasm_details}},
-  \code{\link{ba_traits}}
+Other brapicore: 
+\code{\link{ba_calls}()},
+\code{\link{ba_commoncropnames}()},
+\code{\link{ba_crops}()},
+\code{\link{ba_crosses_study}()},
+\code{\link{ba_germplasm_details_study}()},
+\code{\link{ba_germplasm_details}()},
+\code{\link{ba_germplasm_pedigree}()},
+\code{\link{ba_germplasm_progeny}()},
+\code{\link{ba_germplasm_search_post}()},
+\code{\link{ba_germplasm_search}()},
+\code{\link{ba_observationvariables_datatypes}()},
+\code{\link{ba_observationvariables_details}()},
+\code{\link{ba_observationvariables_ontologies}()},
+\code{\link{ba_observationvariables}()},
+\code{\link{ba_phenotypes_search_post}()},
+\code{\link{ba_programs_search_post}()},
+\code{\link{ba_programs}()},
+\code{\link{ba_studies_germplasm_details}()},
+\code{\link{ba_traits}()}
 }
 \author{
 Reinhard Simon, Maikel Verouden

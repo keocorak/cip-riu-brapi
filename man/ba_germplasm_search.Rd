@@ -4,10 +4,16 @@
 \alias{ba_germplasm_search}
 \title{ba_germplasm_search}
 \usage{
-ba_germplasm_search(con = NULL, germplasmPUI = "",
-  germplasmDbId = "", germplasmName = "", commonCropName = "",
-  pageSize = 1000, page = 0, rclass = c("tibble", "data.frame",
-  "list", "json"))
+ba_germplasm_search(
+  con = NULL,
+  germplasmPUI = "",
+  germplasmDbId = "",
+  germplasmName = "",
+  commonCropName = "",
+  pageSize = 1000,
+  page = 0,
+  rclass = c("tibble", "data.frame", "list", "json")
+)
 }
 \arguments{
 \item{con}{list, brapi connection object}
@@ -60,51 +66,58 @@ if (interactive()) {
 \href{https://github.com/plantbreeding/API/blob/V1.2/Specification/Germplasm/GermplasmSearch_GET.md}{github}
 }
 \seealso{
-Other brapicore: \code{\link{ba_calls}},
-  \code{\link{ba_commoncropnames}}, \code{\link{ba_crops}},
-  \code{\link{ba_germplasm_details_study}},
-  \code{\link{ba_germplasm_details}},
-  \code{\link{ba_germplasm_pedigree}},
-  \code{\link{ba_germplasm_progeny}},
-  \code{\link{ba_germplasm_search_post}},
-  \code{\link{ba_observationvariables_datatypes}},
-  \code{\link{ba_observationvariables_details}},
-  \code{\link{ba_observationvariables_ontologies}},
-  \code{\link{ba_observationvariables}},
-  \code{\link{ba_phenotypes_search_post}},
-  \code{\link{ba_programs_search_post}},
-  \code{\link{ba_programs}},
-  \code{\link{ba_studies_germplasm_details}},
-  \code{\link{ba_traits_details}}, \code{\link{ba_traits}}
+Other brapicore: 
+\code{\link{ba_calls}()},
+\code{\link{ba_commoncropnames}()},
+\code{\link{ba_crops}()},
+\code{\link{ba_crosses_study}()},
+\code{\link{ba_germplasm_details_study}()},
+\code{\link{ba_germplasm_details}()},
+\code{\link{ba_germplasm_pedigree}()},
+\code{\link{ba_germplasm_progeny}()},
+\code{\link{ba_germplasm_search_post}()},
+\code{\link{ba_observationvariables_datatypes}()},
+\code{\link{ba_observationvariables_details}()},
+\code{\link{ba_observationvariables_ontologies}()},
+\code{\link{ba_observationvariables}()},
+\code{\link{ba_phenotypes_search_post}()},
+\code{\link{ba_programs_search_post}()},
+\code{\link{ba_programs}()},
+\code{\link{ba_studies_germplasm_details}()},
+\code{\link{ba_traits_details}()},
+\code{\link{ba_traits}()}
 
-Other genotyping: \code{\link{ba_genomemaps_data_range}},
-  \code{\link{ba_genomemaps_data}},
-  \code{\link{ba_genomemaps_details}},
-  \code{\link{ba_genomemaps}},
-  \code{\link{ba_germplasm_attributes}},
-  \code{\link{ba_germplasm_markerprofiles}},
-  \code{\link{ba_germplasm_search_post}},
-  \code{\link{ba_germplasmattributes_attributes}},
-  \code{\link{ba_germplasmattributes_categories}},
-  \code{\link{ba_germplasmattributes_details}},
-  \code{\link{ba_markerprofiles_allelematrices_details}},
-  \code{\link{ba_markerprofiles_allelematrices_search_post}},
-  \code{\link{ba_markerprofiles_allelematrices_search}},
-  \code{\link{ba_markerprofiles_allelematrix_search}},
-  \code{\link{ba_markerprofiles_details}},
-  \code{\link{ba_markerprofiles_search}},
-  \code{\link{ba_markers_details}},
-  \code{\link{ba_markers_search_post}},
-  \code{\link{ba_markers_search}}
+Other genotyping: 
+\code{\link{ba_genomemaps_data_range}()},
+\code{\link{ba_genomemaps_data}()},
+\code{\link{ba_genomemaps_details}()},
+\code{\link{ba_genomemaps}()},
+\code{\link{ba_germplasm_attributes}()},
+\code{\link{ba_germplasm_markerprofiles}()},
+\code{\link{ba_germplasm_search_post}()},
+\code{\link{ba_germplasmattributes_attributes}()},
+\code{\link{ba_germplasmattributes_categories}()},
+\code{\link{ba_germplasmattributes_details}()},
+\code{\link{ba_markerprofiles_allelematrices_details}()},
+\code{\link{ba_markerprofiles_allelematrices_search_post}()},
+\code{\link{ba_markerprofiles_allelematrices_search}()},
+\code{\link{ba_markerprofiles_allelematrix_search}()},
+\code{\link{ba_markerprofiles_details}()},
+\code{\link{ba_markerprofiles_search}()},
+\code{\link{ba_markers_details}()},
+\code{\link{ba_markers_search_post}()},
+\code{\link{ba_markers_search}()}
 
-Other germplasm: \code{\link{ba_germplasm_breedingmethods}},
-  \code{\link{ba_germplasm_details_study}},
-  \code{\link{ba_germplasm_details}},
-  \code{\link{ba_germplasm_markerprofiles}},
-  \code{\link{ba_germplasm_pedigree}},
-  \code{\link{ba_germplasm_progeny}},
-  \code{\link{ba_germplasm_search_post}},
-  \code{\link{ba_studies_germplasm_details}}
+Other germplasm: 
+\code{\link{ba_crosses_study}()},
+\code{\link{ba_germplasm_breedingmethods}()},
+\code{\link{ba_germplasm_details_study}()},
+\code{\link{ba_germplasm_details}()},
+\code{\link{ba_germplasm_markerprofiles}()},
+\code{\link{ba_germplasm_pedigree}()},
+\code{\link{ba_germplasm_progeny}()},
+\code{\link{ba_germplasm_search_post}()},
+\code{\link{ba_studies_germplasm_details}()}
 }
 \author{
 Reinhard Simon, Maikel Verouden

@@ -4,8 +4,7 @@
 \alias{ba_studies_table_save}
 \title{ba_studies_table_save}
 \usage{
-ba_studies_table_save(con = NULL, studyDbId = "1",
-  study_table = NULL)
+ba_studies_table_save(con = NULL, studyDbId = "1", study_table = NULL)
 }
 \arguments{
 \item{con}{list; brapi connection object}
@@ -36,38 +35,41 @@ if (interactive()) {
 \href{https://github.com/plantbreeding/API/blob/master/Specification/Studies/StudyObservationUnitsAsTableSave.md}{github}
 }
 \seealso{
-Other studies: \code{\link{ba_phenotypes_search}},
-  \code{\link{ba_studies_details}},
-  \code{\link{ba_studies_germplasm_details}},
-  \code{\link{ba_studies_layout}},
-  \code{\link{ba_studies_observationlevels}},
-  \code{\link{ba_studies_observations}},
-  \code{\link{ba_studies_observationunits}},
-  \code{\link{ba_studies_observationvariables}},
-  \code{\link{ba_studies_search_post}},
-  \code{\link{ba_studies_search}},
-  \code{\link{ba_studies_seasons}},
-  \code{\link{ba_studies_studytypes}},
-  \code{\link{ba_studies_table}}
+Other studies: 
+\code{\link{ba_phenotypes_search}()},
+\code{\link{ba_studies_details}()},
+\code{\link{ba_studies_germplasm_details}()},
+\code{\link{ba_studies_layout}()},
+\code{\link{ba_studies_observationlevels}()},
+\code{\link{ba_studies_observations}()},
+\code{\link{ba_studies_observationunits}()},
+\code{\link{ba_studies_observationvariables}()},
+\code{\link{ba_studies_search_post}()},
+\code{\link{ba_studies_search}()},
+\code{\link{ba_studies_seasons}()},
+\code{\link{ba_studies_studytypes}()},
+\code{\link{ba_studies_table}()}
 
-Other phenotyping: \code{\link{ba_phenotypes_search}},
-  \code{\link{ba_samples_save}},
-  \code{\link{ba_samples_search_post}},
-  \code{\link{ba_samples_search}},
-  \code{\link{ba_samples}},
-  \code{\link{ba_studies_details}},
-  \code{\link{ba_studies_layout}},
-  \code{\link{ba_studies_observationlevels}},
-  \code{\link{ba_studies_observations}},
-  \code{\link{ba_studies_observationunits_save}},
-  \code{\link{ba_studies_observationunits}},
-  \code{\link{ba_studies_observationvariables}},
-  \code{\link{ba_studies_search_post}},
-  \code{\link{ba_studies_search}},
-  \code{\link{ba_studies_seasons}},
-  \code{\link{ba_studies_studytypes}},
-  \code{\link{ba_studies_table}},
-  \code{\link{ba_trials_details}}, \code{\link{ba_trials}}
+Other phenotyping: 
+\code{\link{ba_phenotypes_search}()},
+\code{\link{ba_samples_save}()},
+\code{\link{ba_samples_search_post}()},
+\code{\link{ba_samples_search}()},
+\code{\link{ba_samples}()},
+\code{\link{ba_studies_details}()},
+\code{\link{ba_studies_layout}()},
+\code{\link{ba_studies_observationlevels}()},
+\code{\link{ba_studies_observations}()},
+\code{\link{ba_studies_observationunits_save}()},
+\code{\link{ba_studies_observationunits}()},
+\code{\link{ba_studies_observationvariables}()},
+\code{\link{ba_studies_search_post}()},
+\code{\link{ba_studies_search}()},
+\code{\link{ba_studies_seasons}()},
+\code{\link{ba_studies_studytypes}()},
+\code{\link{ba_studies_table}()},
+\code{\link{ba_trials_details}()},
+\code{\link{ba_trials}()}
 }
 \author{
 Reinhard Simon

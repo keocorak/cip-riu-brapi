@@ -4,9 +4,16 @@
 \alias{ba_vendor_plates_search_post}
 \title{ba_vendor_plates_search_post}
 \usage{
-ba_vendor_plates_search_post(con = NULL, vendorProjectDbIds = "",
-  vendorPlateDbIds = "", clientPlateDbIds = "", sampleInfo = TRUE,
-  pageSize = 1000, page = 0, rclass = c("list", "json"))
+ba_vendor_plates_search_post(
+  con = NULL,
+  vendorProjectDbIds = "",
+  vendorPlateDbIds = "",
+  clientPlateDbIds = "",
+  sampleInfo = TRUE,
+  pageSize = 1000,
+  page = 0,
+  rclass = c("list", "json")
+)
 }
 \arguments{
 \item{con}{list, brapi connection object}

@@ -4,8 +4,11 @@
 \alias{ba_vendor_plates_details}
 \title{ba_vendor_plates_details}
 \usage{
-ba_vendor_plates_details(con = NULL, vendorPlateDbId = "",
-  rclass = c("list", "json"))
+ba_vendor_plates_details(
+  con = NULL,
+  vendorPlateDbId = "",
+  rclass = c("list", "json")
+)
 }
 \arguments{
 \item{con}{list, brapi connection object}

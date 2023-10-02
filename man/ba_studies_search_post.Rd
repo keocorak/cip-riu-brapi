@@ -4,13 +4,27 @@
 \alias{ba_studies_search_post}
 \title{ba_studies_search_post}
 \usage{
-ba_studies_search_post(con = NULL, studyDbIds = "", trialDbIds = "",
-  programDbIds = "", locationDbIds = "", seasonDbId = "",
-  studyType = "", studyNames = "", studyLocations = "",
-  programNames = "", commonCropName = "", germplasmDbIds = "",
-  observationVariableDbIds = "", active = NA, sortBy = "",
-  sortOrder = "", pageSize = 1000, page = 0, rclass = c("tibble",
-  "data.frame", "list", "json"))
+ba_studies_search_post(
+  con = NULL,
+  studyDbIds = "",
+  trialDbIds = "",
+  programDbIds = "",
+  locationDbIds = "",
+  seasonDbId = "",
+  studyType = "",
+  studyNames = "",
+  studyLocations = "",
+  programNames = "",
+  commonCropName = "",
+  germplasmDbIds = "",
+  observationVariableDbIds = "",
+  active = NA,
+  sortBy = "",
+  sortOrder = "",
+  pageSize = 1000,
+  page = 0,
+  rclass = c("tibble", "data.frame", "list", "json")
+)
 }
 \arguments{
 \item{con}{list, brapi connection object}
@@ -117,38 +131,41 @@ if (interactive()) {
 \href{https://github.com/plantbreeding/API/blob/V1.2/Specification/Studies/StudiesSearch_POST.md}{github}
 }
 \seealso{
-Other studies: \code{\link{ba_phenotypes_search}},
-  \code{\link{ba_studies_details}},
-  \code{\link{ba_studies_germplasm_details}},
-  \code{\link{ba_studies_layout}},
-  \code{\link{ba_studies_observationlevels}},
-  \code{\link{ba_studies_observations}},
-  \code{\link{ba_studies_observationunits}},
-  \code{\link{ba_studies_observationvariables}},
-  \code{\link{ba_studies_search}},
-  \code{\link{ba_studies_seasons}},
-  \code{\link{ba_studies_studytypes}},
-  \code{\link{ba_studies_table_save}},
-  \code{\link{ba_studies_table}}
+Other studies: 
+\code{\link{ba_phenotypes_search}()},
+\code{\link{ba_studies_details}()},
+\code{\link{ba_studies_germplasm_details}()},
+\code{\link{ba_studies_layout}()},
+\code{\link{ba_studies_observationlevels}()},
+\code{\link{ba_studies_observations}()},
+\code{\link{ba_studies_observationunits}()},
+\code{\link{ba_studies_observationvariables}()},
+\code{\link{ba_studies_search}()},
+\code{\link{ba_studies_seasons}()},
+\code{\link{ba_studies_studytypes}()},
+\code{\link{ba_studies_table_save}()},
+\code{\link{ba_studies_table}()}
 
-Other phenotyping: \code{\link{ba_phenotypes_search}},
-  \code{\link{ba_samples_save}},
-  \code{\link{ba_samples_search_post}},
-  \code{\link{ba_samples_search}},
-  \code{\link{ba_samples}},
-  \code{\link{ba_studies_details}},
-  \code{\link{ba_studies_layout}},
-  \code{\link{ba_studies_observationlevels}},
-  \code{\link{ba_studies_observations}},
-  \code{\link{ba_studies_observationunits_save}},
-  \code{\link{ba_studies_observationunits}},
-  \code{\link{ba_studies_observationvariables}},
-  \code{\link{ba_studies_search}},
-  \code{\link{ba_studies_seasons}},
-  \code{\link{ba_studies_studytypes}},
-  \code{\link{ba_studies_table_save}},
-  \code{\link{ba_studies_table}},
-  \code{\link{ba_trials_details}}, \code{\link{ba_trials}}
+Other phenotyping: 
+\code{\link{ba_phenotypes_search}()},
+\code{\link{ba_samples_save}()},
+\code{\link{ba_samples_search_post}()},
+\code{\link{ba_samples_search}()},
+\code{\link{ba_samples}()},
+\code{\link{ba_studies_details}()},
+\code{\link{ba_studies_layout}()},
+\code{\link{ba_studies_observationlevels}()},
+\code{\link{ba_studies_observations}()},
+\code{\link{ba_studies_observationunits_save}()},
+\code{\link{ba_studies_observationunits}()},
+\code{\link{ba_studies_observationvariables}()},
+\code{\link{ba_studies_search}()},
+\code{\link{ba_studies_seasons}()},
+\code{\link{ba_studies_studytypes}()},
+\code{\link{ba_studies_table_save}()},
+\code{\link{ba_studies_table}()},
+\code{\link{ba_trials_details}()},
+\code{\link{ba_trials}()}
 }
 \author{
 Reinhard Simon, Maikel Verouden
