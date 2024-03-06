@@ -9,9 +9,17 @@
 #'                      default: ""
 #' @param notation character, text representation of the pedigree e.g. "purdy";
 #'                 default: ""
+#' @param includeParents logical, indicating whether to include, specified as
+#'                        TRUE, a parent array or not, specified as FALSE;
+#'                        default: TRUE
+#' @param includeProgeny logical, indicating whether to include, specified as
+#'                        TRUE, a progeny array or not, specified as FALSE;
+#'                        default: FALSE
 #' @param includeSiblings logical, indicating whether to include, specified as
 #'                        TRUE, a siblings array or not, specified as FALSE;
-#'                        default: NA
+#'                        default: FALSE
+#' @param pedigreeDepth numeric, indicating number of levels to recursivley search up the tree in the response; default: 5
+#' @param progenyDepth numeric, indicating number of levels to recursivley search down the tree in the response; default: 1
 #' @param rclass character, class of the object to be returned;  default: "tibble"
 #'               , possible other values: "data.frame"/"list"/"json"
 #'
@@ -38,7 +46,7 @@ ba_germplasm_pedigree <- function(con = NULL,
                                   notation = "",
                                   includeParents=TRUE,
                                   includeProgeny=FALSE,
-                                  includeSiblings = TRUE,
+                                  includeSiblings = FALSE,
                                   pedigreeDepth=5,
                                   progenyDepth=1,
                                   rclass = c("tibble", "data.frame",
