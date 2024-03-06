@@ -32,23 +32,33 @@
 #'
 #' @import httr
 #' @export
+
 ba_germplasm_pedigree <- function(con = NULL,
                                   germplasmDbId = "",
                                   notation = "",
-                                  includeSiblings = NA,
+                                  includeParents=TRUE,
+                                  includeProgeny=FALSE,
+                                  includeSiblings = TRUE,
+                                  pedigreeDepth=5,
+                                  progenyDepth=1,
                                   rclass = c("tibble", "data.frame",
                                              "list", "json")) {
   ba_check(con = con, verbose = FALSE)
   check_character(germplasmDbId)
-  stopifnot(is.logical(includeSiblings))
+  stopifnot(is.logical(includeSiblings),is.logical(includeParents), is.logical(includeProgeny), is.numeric(pedigreeDepth),is.numeric(progenyDepth) )
   check_req(germplasmDbId)
   rclass <- match_req(rclass)
 
-  brp <- get_brapi(con = con) %>% paste0("germplasm/", germplasmDbId, "/pedigree")
-  callurl <- get_endpoint(brp,
-                          notation = notation,
-                          includeSiblings = includeSiblings)
-
+  brp <- get_brapi(con = con) %>% paste0("pedigree?germplasmDbId=", tolower(as.character(germplasmDbId)), 
+                                         "&includeParents=", tolower(as.character(includeParents)),
+                                         "&includeProgeny=", tolower(as.character(includeProgeny)), 
+                                         "&includeSiblings=", tolower(as.character(includeSiblings)),
+                                         "&pedigreeDepth=", pedigreeDepth, 
+                                         "&progenyDepth=", progenyDepth,
+                                         
+                                         "&page=0&pageSize=1000")
+  callurl <- get_endpoint(brp)
+  
   try({
     resp <- brapiGET(url = callurl, con = con)
     cont <- httr::content(x = resp, as = "text", encoding = "UTF-8")
@@ -82,8 +92,8 @@ ba_germplasm_pedigree <- function(con = NULL,
       out <- ms2tbl(res = cont) %>% tibble::as_tibble()
     if (rclass == "data.frame") {
       out <- ms2tbl(res = cont) %>%
-             tibble::as_tibble() %>%
-             as.data.frame()
+        tibble::as_tibble() %>%
+        as.data.frame()
     }
     class(out) <- c(class(out), "ba_germplasm_pedigree")
     show_metadata(resp)
