@@ -27,6 +27,7 @@
 #' @export
 
 ba_seedlots_details <- function(con = NULL,
+                                crossName=NULL,
                                 pageSize = 1000,
                                 page = 0,
                                 rclass = c(
@@ -38,7 +39,7 @@ ba_seedlots_details <- function(con = NULL,
   # check_req(germplasmDbId)
   rclass <- match.arg(rclass)
 
-  callurl <- get_brapi(con = con) %>% paste0("seedlots?page=", page, "&pageSize=", pageSize)
+  callurl <- get_brapi(con = con) %>% paste0("seedlots?crossName=", crossName, "&page=", page, "&pageSize=", pageSize)
 
   try({
     resp <- brapiGET(url = callurl, con = con)
