@@ -50,7 +50,7 @@ ba_studies_observations_brapi2 <- function(con = NULL,
   check_req(studyDbId)
   check_character(studyDbId, observationVariableDbIds)
   rclass <- match.arg(rclass)
-  brp <- get_brapi(con) %>% paste0("observations?studyDbId=", studyDbId)
+  brp <- get_brapi(con) %>% paste0("observations?studyDbId=", studyDbId, "&page=", page, "&pageSize=", pageSize)
   callurl <- get_endpoint(brp,
                           observationVariableDbIds = observationVariableDbIds,
                           pageSize = pageSize,
