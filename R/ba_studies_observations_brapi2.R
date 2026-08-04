@@ -39,7 +39,7 @@
 #' @example inst/examples/ex-ba_studies_observations.R
 #' @import tibble
 #' @export
-ba_studies_observations_2 <- function(con = NULL,
+ba_studies_observations_brapi2 <- function(con = NULL,
                                     studyDbId = "",
                                     observationVariableDbIds = "",
                                     pageSize = 1000,
